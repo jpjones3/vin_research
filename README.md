@@ -1,2 +1,2 @@
 # vin_research
- automation for web scraping Vehicle Indentification Numbers (VINs)
+ Automation for web scraping Vehicle Identification Numbers (VINs)
