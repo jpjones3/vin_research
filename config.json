@@ -1,0 +1,27 @@
+{
+    "GLOBAL": {
+        "DB_HOST": "your db host name or ip address", 
+        "DB_DATABASE": "your database name",
+        "DB_PORT": 3306,
+        "DB_USER": "your database user",
+        "DB_PASSWORD" : "your database password"
+    },
+    "2021": {
+        "DB_TABLE": "vin_2021",
+        "TYPE": "std",
+        "VIN_PREFIX_STD_GT_COUPE": "1FA6P8CF0M5",
+        "VIN_PREFIX_STD_GT_CONV": "1FATP8FF0M5",
+        "VIN_PREFIX_STD_BASE_COUPE": "1FA6P8TH0M5",
+        "VIN_PREFIX_STD_BASE_CONV": "1FATP8UH0M5"
+    },
+    "2021mach1": {
+        "DB_TABLE": "vin_2021",
+        "TYPE": "mach1",
+        "VIN_PREFIX_MACH_1": "1FA6P8R00M5"
+    },
+    "2021gt500": {
+        "DB_TABLE": "vin_2021",
+        "TYPE": "gt500",
+        "VIN_PREFIX_GT_500": "1FA6P8SJ0M5"
+    }
+}
