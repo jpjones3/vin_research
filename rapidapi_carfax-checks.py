@@ -41,7 +41,7 @@ def check_carfax(vin):
         "Accept": "application/json",
         "x-rapidapi-key": "a846f4c19emsh0ea8c5fb7f5c009p1a678bjsn1170fed29ff0",
         "x-rapidapi-host": "carfax-checks.p.rapidapi.com",
-        "User-Agent": "TWFResearchBot/1.0 (+https://triplewhitefox.com/bots/)"
+        "User-Agent": "MyVINResearchBot/1.0 (+https://yourwebsite.com/botpolicy/)"
     }
 
     try:
@@ -118,7 +118,6 @@ if __name__ == "__main__":
         target = sys.argv[2]
 
     start_sequence = None
-    start_sequence = 119000
     if len(sys.argv) > 3:
         start_sequence = sys.argv[3]
 
