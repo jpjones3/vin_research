@@ -18,6 +18,24 @@ It is not possible for just anyone to call the Carfax API to find the number of 
 
 # Features
 * When the python script is called it can be passed an instance number so that multiple instances can be run simuultaneously
-* The results are stored in a database. The database is seeded before the first run with sequence numbers that are to be considered
-* The script can be passed a sequence number at which to start processing. If no number is passed then a sequence number is picked randomly
+* The script is driven from and the results are stored in a database. The database is seeded before the first run with the sequence numbers that are to be considered
+* The script can be passed a sequence number from which to start processing. If no number is passed then a sequence number is picked randomly
 * The script will pause between calls such as to not overwhelm the api being called
+
+# Database
+This is the syntax to create the table referenced by the python script. It is for MariaDB
+
+    CREATE TABLE `vin_2021` (
+      `ID` int(11) NOT NULL AUTO_INCREMENT,
+      `sequence` varchar(45) DEFAULT NULL,
+      `vin` varchar(45) DEFAULT NULL,
+      `carfax_records` int(11) DEFAULT NULL,
+      `autocheck_records` int(11) DEFAULT NULL,
+      `name` varchar(255) DEFAULT NULL,
+      `bot` varchar(45) DEFAULT NULL,
+      `checked_on` datetime DEFAULT NULL,
+      `notes` varchar(255) DEFAULT NULL,
+      `type` varchar(45) DEFAULT NULL,
+      PRIMARY KEY (`ID`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=346770 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
